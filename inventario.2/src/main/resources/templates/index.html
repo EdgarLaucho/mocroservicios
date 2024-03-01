@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inventario</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="">App inventario</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="/">Inicio </a>
+				</li>
+
+
+			</ul>
+
+		</div>
+	</nav>
+	<div class="container text-center">
+		<div>
+			<h1>Bienvenido a la aplicacion de inventario</h1>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/categoria}">Lista de categorias</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/categoria/nuevo}">Agregar una categoria</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/productos}">Lista de productos</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/producto/nuevo}">agregar producto</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/marca/listar}">Lista de Marca</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/marca/nueva}">agregar una Marca</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/usuario}">Lista de usuario</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/usuario/nuevo}">agregar un usuario</a>
+		</div>
+
+	</div>
+</body>
+
+
+</html>
