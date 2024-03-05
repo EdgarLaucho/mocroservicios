@@ -7,6 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 //habilitar el cliente feign podrmos llamar a los demas microservicios
 @EnableFeignClients
 @SpringBootApplication
+
 public class UsuarioService1Application {
 
 	public static void main(String[] args) {
